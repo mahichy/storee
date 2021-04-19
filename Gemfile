@@ -19,6 +19,8 @@ gem 'devise'
 gem 'minitest-rails'
 gem 'hirb'
 gem 'pry'
+gem 'carrierwave', '~> 1.2'
+gem "mini_magick"
 
 
 
