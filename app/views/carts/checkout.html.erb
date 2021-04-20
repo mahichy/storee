@@ -18,7 +18,7 @@
 	<%= f.fields_for :user, f.object.user do |u|%>
 		<div class="form-group">
 			<p><%= u.text_field :name, placeholder: "Name", class: "form-control input-lg" %></p>
-			<p><%= u.text_field :email, placeholder: "Email", class: "form-control " %></p>
+			<p><%= u.text_field :email, placeholder: "Email", class: "form-control" %></p>
 			<span class="help-block"> This will help you track your order more effectively </span>
 		</div>
 		<div class="form-group">
@@ -31,4 +31,5 @@
 			</div>
 		</div>
 	<% end -%>
+	<%= f.submit "Place_Order", class: "btn btn-primary" %>
 <% end -%>
