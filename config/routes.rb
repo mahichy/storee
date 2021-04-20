@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   resource :cart, only: [:show] do 
   	post :add, path: "add/:id"
+  	get :checkout
   end
+
+  resources :orders, only: [ :index, :show, :create ]
 
   devise_for :users
   root 'products#index'
