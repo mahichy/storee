@@ -12,12 +12,14 @@
   <body>
 
     <%= render 'shared/nav'%>
-      <div class="container">
+     <!--  <div class="container">
          <p class="notice"><%= notice %></p>
          <p class="alert"><%= alert %></p>
-      </div>
+      </div> -->
 
        <div class="container">
+        <%= content_tag :div, notice, class: "bg-success" %>
+        <%= content_tag :div, alert, class: "bg-danger" %>
         <%= yield %>
        </div>
   </body>
