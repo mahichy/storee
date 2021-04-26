@@ -3,7 +3,8 @@ class OrdersController < ApplicationController
 
 	def create
 		@order_form = OrderForm.new(
-			user: order_params[:user]
+			user: User.new(order_params[:user]),
+			cart: @cart
 			)
 
 		if @order_form.save
