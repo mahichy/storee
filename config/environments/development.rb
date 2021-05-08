@@ -69,9 +69,10 @@ Rails.application.configure do
     port: 587,
     domain: 'gmail.com',
     user_name: 'oshimchy@gmail.com',
-    password: ENV["PASSWORD"],
+    password: Rails.application.secrets.gmail_password,
     authentication: 'plain',
     # enable_starttls_auto: true
     # props.put("mail.smtp.starttls.enable", "true");
   }
+      binding.pry
 end
