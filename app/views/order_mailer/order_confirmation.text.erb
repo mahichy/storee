@@ -2,7 +2,7 @@ Hello <%= @order.user.name %>,
 
 Thank you for placing your order. Here is a summery for order #<%= @order.id %>:
 
-<% @order.items.each do |item| %>
+<% @order.order_items.each do |item| %>
 	* <%= item.quantity %> <%= item.product.name %> (<%= number_to_currency item.total_price %>)
 <% end -%>
 
