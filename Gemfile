@@ -23,6 +23,9 @@ gem 'carrierwave', '~> 1.2'
 gem "mini_magick"
 gem 'country_select'
 
+gem "braintree", "~> 4.0.0"
+
+
 
 
 gem 'bootsnap', '>= 1.1.0', require: false

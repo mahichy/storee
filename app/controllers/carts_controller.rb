@@ -14,5 +14,7 @@ class CartsController < ApplicationController
 
 	def checkout 
 		@order_form = OrderForm.new user: User.new
+		# pass client_token to your front-end
+		@client_token = Braintree::client_token.generate
 	end
 end

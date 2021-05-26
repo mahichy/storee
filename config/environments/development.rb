@@ -86,4 +86,11 @@ Rails.application.configure do
     openssl_verify_mode: 'none'
     }
     # binding.pry
+
+  gateway = Braintree::Gateway.new(
+  :environment => :sandbox,
+  :merchant_id => "z5yjfwx78cykdjzv",
+  :public_key => "jvh7v8k97s8xjcnx",
+  :private_key => "0ad18df0de7b14857674fa6c7491cce1",
+  )
 end
